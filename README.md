@@ -1,4 +1,4 @@
-# Project React Desing
+# Reactjs design patterns
 
 This project will have a most commun design patterns in Reactjs. The approch in this project is show this patterns and help to remenber a practices these
 
