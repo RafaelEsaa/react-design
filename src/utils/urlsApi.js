@@ -1,0 +1,1 @@
+export const urlApiStarWars = "https://swapi.dev/api";
