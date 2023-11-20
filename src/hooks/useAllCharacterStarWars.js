@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getAllCharacter } from '../services/starWars'
 
+// Custom Hook design patterns
 export const useAllCharacterStarWars = (endpoint) => {
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState([]);
@@ -14,7 +15,7 @@ export const useAllCharacterStarWars = (endpoint) => {
             const result = await getAllCharacter(endpoint);
             setData(result)
         } catch (error) {
-            console.log(error)
+            console.error(error);
             setLoading(false)
         } finally {
             setLoading(false)
