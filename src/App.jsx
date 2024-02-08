@@ -12,14 +12,16 @@ const App = () => {
   return (
     <>
       <button onClick={() => setShow(true)}>show title</button>
+
       {/* Suspense component */}
       {show && (
         <Suspense fallback={<p>Cargando...</p>}>
           <Title data={data} />
         </Suspense>
       )}
-      {/* Render prop */}
-      <Messages
+
+      {/* Render prop (design patterns)*/}
+      {/* <Messages
         render={({ mensaje }) => {
           return (
             <>
@@ -28,7 +30,8 @@ const App = () => {
             </>
           );
         }}
-      />
+      /> */}
+
       <br />
       {/* Renderizando high order component */}
       <ListWithHoc />

@@ -6,6 +6,7 @@ export const withListQuery = (Component, endpoint) => {
   const WrappedComponent = () => {
     const [dataFilter, setDataFilter] = useState(null);
     const [inputValue, setInputValue] = useState("");
+
     // Custom Hook design patterns
     const { data, isLoading } = useAllCharacterStarWars(endpoint);
 
